@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Investment Form</title>
+</head>
+<body>
+    <h1>Investment Form</h1>
+    <form action="#" th:action="@{/investment}" th:object="${investmentForm}" method="post">
+        <label for="initialPrice">Harga Awal:</label>
+        <input type="number" th:field="*{initialPrice}" required />
+        <br/>
+        <label for="finalPrice">Harga Akhir:</label>
+        <input type="number" th:field="*{finalPrice}" required />
+        <br/>
+        <label for="marketVolume">Volume Pasar:</label>
+        <input type="number" th:field="*{marketVolume}" required />
+        <br/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

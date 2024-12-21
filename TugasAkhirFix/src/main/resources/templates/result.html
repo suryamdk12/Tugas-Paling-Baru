@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hasil Investasi</title>
+</head>
+<body>
+    <h1>Hasil Investasi</h1>
+    <p>Cluster: <span th:text="${result.cluster}"></span></p>
+    <p>Stock Symbol: <span th:text="${result.stock_symbol}"></span></p>
+    <h2>Grafik Clustering</h2>
+    <img th:src="@{${imagePath}}" alt="Grafik Clustering" />
+</body>
+</html>
